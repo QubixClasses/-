@@ -1,0 +1,227 @@
+/* Your existing styles */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+
+body {
+    background-color: rgb(0, 22, 100);
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    font-size: 8px;
+    color: rgb(3, 2, 1);
+    text-align: center;
+}
+
+/* main@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+main {
+    border: 3px solid black;
+    margin: 22px;
+    height: 88vh;
+    background-color: rgb(255, 251, 251);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+/* main################################################################################### */
+.top {
+    color: rgb(5, 104, 170);
+    font-style: oblique;
+}
+
+.topimg {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.Content {
+    width: 94%;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+.location {
+    border: 3px solid rgb(86, 14, 255);
+    text-align: center;
+    margin: 30px;
+    font-size: large;
+    font-family: 'Lemon', serif;
+    color: rgb(255, 0, 0);
+    background-color: rgb(165, 177, 233);
+    left: 30px;
+    right: 30px;
+    height: 700px;
+}
+
+.location div:hover {
+    background-color: rgb(16, 0, 87);
+}
+
+.info {
+    /* Add the multi-level navbar styles here */
+    overflow: hidden;
+    background-color: #333;
+}
+
+.info a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.info .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.info .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.info a:hover, .info .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.info .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.info .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.info .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.info .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.clickme {
+    background-color: rgb(179, 255, 0);
+    border: 3px solid red;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.clickme a:hover {
+    background-color: coral;
+}
+
+.teacher {
+    border: 2px solid rgb(93, 93, 174);
+    padding: 15px;
+    margin: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    min-width: fit-content;
+    text-align: center;
+    background-color: rgb(0, 0, 63);
+    color: aqua;
+    box-shadow: 0px 0px 5px 3px;
+}
+.Tmain{
+    background-color: #333;
+    
+}
+
+.teacherinfo {
+    padding-left: 10px;
+    font-family: 'Concert One', sans-serif;
+    font-size: 22px;
+    
+    color: whitesmoke;
+    max-height: 600px; /* Set a maximum height for scroll */
+    overflow-y: auto; /* Enable vertical scroll when content overflows */
+}
+.sir1{
+    color: rgb(0, 234, 255);
+}
+.aboutteacher{
+    color: whitesmoke;
+}
+
+.contactusbox{
+    display: flex;
+    flex-direction: column;
+}
+.contactlink{
+    display: flex;
+    border: 2px solid white;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #f9f9f9;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.y{
+    background-color: red;
+}
+.i{
+    background-color: rgb(209, 0, 181);
+}
+.sirn{
+    color: yellow;
+}
+.locationsfather{
+    background-color: rgb(6, 20, 73);
+}
+@media screen and (min-width: 200px){
+    body{
+        background-color: rgb(0, 22, 100);
+    }
+}
+
+@media screen and (min-width: 455px) {
+    .subcontent {
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+    }
+    .subtitles{
+        font-size: 45px;
+    }
+    .teacherinfo{
+        font-size: 50px;
+        max-height: 75vh;
+    }
+    .teacher{
+        font-size: 40px;
+    }
+    .info a{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubix Classes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+        /* Your existing styles */
+        @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+        body {
+            background-color: rgb(2, 2, 99);
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            font-size: 8px;
+            color: rgb(3, 2, 1);
+            text-align: center;
+        }
+
+        main {
+            border: 3px solid rgb(43, 0, 255);
+            margin: 22px;
+            height: 88vh;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            align-items: center;
+        }
+
+        .top {
+            color: rgb(5, 104, 170);
+            font-style: oblique;
+        }
+
+        .topimg {
+            width: 100%;
+            max-width: 1500px;
+            /* mix-blend-mode: color-burn; */
+        }
+
+        .Content {
+            width: 94%;
+            max-width: 700px;
+            margin-right: auto;
+            margin-left: 0px;
+        }
+
+        .location {
+            border: 3px solid rgb(86, 14, 255);
+            text-align: center;
+            margin: 45px;
+            font-size: large;
+            font-family: 'Lemon', serif;
+            color: rgb(255, 0, 0);
+            background-color: aqua;
+            left: 30px;
+            right: 30px;
+        }
+
+        .location div:hover {
+            background-color: rgb(16, 0, 87);
+        }
+
+        .info {
+            /* Add the multi-level navbar styles here */
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .info a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .info a:hover {
+            background-color: red;
+        }
+
+        .clickme {
+            background-color: rgb(179, 255, 0);
+            border: 3px solid red;
+            margin: 20px;
+        }
+
+
+        .topstudent {
+            border: 3px solid darkblue;
+            margin: 34px;
+            background-color: #15009d;
+
+        }
+
+        .studenttop {
+            padding: 25px;
+            text-align: center;
+            color: rgb(0, 251, 255);
+            font-family: 'Salsa', cursive;
+            /* font-family: inherit; */
+            font-size: 50px;
+        }
+
+        .scontent {
+            margin-left: 15px;
+            color: aliceblue;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .addmition {
+            background-color: #15009d;
+            margin: 10px 35px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .addmittittle {
+            color: aliceblue;
+        }
+
+        .addmit {
+            color: aqua;
+            font-size: 50px;
+            font-family: 'Salsa', cursive;
+            margin-bottom: 20px;
+        }
+        .Class_img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Class_img img{
+            /* width: 30px; */
+            width: 84%;
+            max-width: 1500px;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #17962a;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #127421;
+        }
+
+        /* ######################################################################################################################## */
+        @media screen and (min-width: 700px) {
+            body {
+                background-color: rgb(255, 255, 255);
+            }
+
+            main {
+                background-color: rgb(255, 255, 255);
+                background-repeat: no-repeat;
+                border: none;
+
+            }
+
+            .both {
+                display: flex;
+                
+            }
+
+            .addmition {
+                background-color: #15009d;
+                margin: 5px 35px;
+                text-align: center;
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+
+            .topstudent {
+                border: 3px solid darkblue;
+                /* margin: 34px; */
+                width: 459px;
+                height: 661px;
+                background-color: #15009d;
+                margin: 0;
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+            .scontent {
+                margin-left: 15px;
+                color: aliceblue;
+                font-size: 41px;
+                text-align: center;
+                border-radius: 8px;
+            }
+
+            .studenttop {
+                padding: 25px;
+                text-align: center;
+                color: rgb(0, 251, 255);
+                font-family: 'Salsa', cursive;
+                /* font-family: inherit; */
+                font-size: 60px;
+            }
+        }
+
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    </style>
+    <link rel="website icon" type="png" href="Qubix box logo.jpg">
+</head>
+<!-- 192.168.29.105 -->
+
+<body>
+
+
+    <!-- Multi-level navigation bar -->
+    <div class="info">
+        <a href="index.html">Home</a>
+        <a href="Location.html">Location</a>
+        <a href="about.html">About Us</a>
+        <a href="Teachers.html">Teachers</a>
+    </div>
+    <main>
+        <!-- ... (rest of your content) ... -->
+
+        <div class="head">
+            <h1 class="top">Preparing you for tomorrow</h1>
+        </div>
+
+        <img class="topimg" src="Qubix logo.jpg" alt="">
+
+        <img class="Content" src="Content.jpg" alt="Right arrow"> 
+        <div class="Class_img"> <img src="Qubix inside of class.jpg" alt="Qubix inside of class" > </div>
+        
+            
+        <div class="both">
+            <div class="topstudent">
+                <div class="studenttop">
+                    TOP STUDENTS
+                </div>
+
+                <div class="scontent">
+                    1.Ved Kumar Gupta <br>
+                    <br>
+                    2.Aadi arnav <br>
+                    <br>
+                    3.Raunak Gupta <br>
+                    <br>
+                    4.Raunak Gupta <br>
+                    <br>
+                    5.Raunak Gupta <br>
+                    <br>
+                </div>
+            </div>
+            <!-- Join Us Form -->
+            <div class="addmition">
+                <div class="addmit">Join Us</div>
+                <form action="mailto:guptashivraj933@gmail.com" method="post" enctype="text/plain">
+                    <label class="addmittittle" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label class="addmittittle" for="class">Class:</label>
+                    <input type="text" id="class" name="class" required>
+
+                    <label class="addmittittle" for="board">Board:</label>
+                    <input type="text" id="board" name="board" required>
+
+                    <label class="addmittittle" for="school">School:</label>
+                    <input type="text" id="school" name="school" required>
+
+                    <label class="addmittittle" for="school">Phone Number:</label>
+                    <input type="text" id="school" name="school" required>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
