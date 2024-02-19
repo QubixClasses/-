@@ -27,6 +27,7 @@ main {
     display: flex;
     flex-direction: column;
     overflow: auto;
+    align-items: center;
 }
 /* main################################################################################### */
 .top {
@@ -67,6 +68,7 @@ main {
     /* Add the multi-level navbar styles here */
     overflow: hidden;
     background-color: #333;
+    font-size: 10px;
 }
 
 .info a {
@@ -76,6 +78,11 @@ main {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 15px;
+}
+
+.info a:hover {
+    background-color: red;
 }
 
 .info .dropdown {
