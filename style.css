@@ -1,234 +1,335 @@
-/* Your existing styles */
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-
-
 body {
-    background-color: rgb(0, 22, 100);
+    background-image: url("business-coaching-or-mentor-to-improve-employee-skills-performance-and-leadership-motivate-people-advice-or-guidance-for-success-concept-employees-walk-up-stair-created-by-coaching-businessman-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.489);
+    z-index: 1000;
+}
+
+.navbar-logo {
+    margin: 5px;
+    padding: 8px;
+    background: blur;
+    border-radius: 10px;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #292929;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
-.head {
-    font-size: 8px;
-    color: rgb(3, 2, 1);
-    text-align: center;
+.navbar-menu li {
+    margin-left: 20px;
+    background-color: #00000013;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-/* main@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-main {
-    border: 3px solid black;
-    margin: 22px;
-    height: 88vh;
-    background-color: rgb(255, 251, 251);
-    display: flex;
+.navbar-menu a {
+    color: #292929;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.hamburger-menu {
+    display: none;
     flex-direction: column;
-    overflow: auto;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #292929;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mobile-menu a {
+    color: #292929;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.top h1 {
+    font-size: 70px;
+    margin: 0;
+    display: flex;
     align-items: center;
 }
-/* main################################################################################### */
-.top {
-    color: rgb(5, 104, 170);
-    font-style: oblique;
-}
 
-.topimg {
-    width: 100%;
-    max-width: 1100px;
-}
-
-.Content {
-    width: 94%;
-    max-width: 700px;
-    margin-right: auto;
-    margin-left: 0px;
-}
-
-.location {
-    border: 3px solid rgb(86, 14, 255);
-    text-align: center;
-    margin: 30px;
-    font-size: large;
-    font-family: 'Lemon', serif;
-    color: rgb(255, 0, 0);
-    background-color: rgb(165, 177, 233);
-    left: 30px;
-    right: 30px;
-    height: 700px;
-}
-
-.location div:hover {
-    background-color: rgb(16, 0, 87);
-}
-
-.info {
-    /* Add the multi-level navbar styles here */
-    overflow: hidden;
-    background-color: #333;
-    font-size: 10px;
-}
-
-.info a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.info a:hover {
-    background-color: red;
-}
-
-.info .dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.info .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+.top h5 {
+    font-size: 20px;
     margin: 0;
 }
 
-.info a:hover, .info .dropdown:hover .dropbtn {
-    background-color: red;
+.top {
+    padding: 20px;
+    margin-top: 80px;
+    text-align: center;
 }
 
-.info .dropdown-content {
-    display: none;
+.scroll-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+    height: auto;
+    width: 100%;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+}
+
+.scroll-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #007bff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.scroll-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.scroll-button {
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
     z-index: 1;
+    display: none;
 }
 
-.info .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.scroll-button.left {
+    left: 0;
 }
 
-.info .dropdown-content a:hover {
-    background-color: #ddd;
+.scroll-button.right {
+    right: 0;
+    top: 656px;
+    right: 23px;
+    border-radius: 99px
 }
 
-.info .dropdown:hover .dropdown-content {
-    display: block;
+@media (min-width: 768px) {
+    .scroll-button {
+        display: block;
+    }
 }
 
-.clickme {
-    background-color: rgb(179, 255, 0);
-    border: 3px solid red;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.clickme a:hover {
-    background-color: coral;
-}
-
-.teacher {
-    border: 2px solid rgb(93, 93, 174);
-    padding: 15px;
-    margin: 35px;
-    margin-left: 100px;
-    margin-right: 100px;
-    min-width: fit-content;
-    text-align: center;
-    background-color: rgb(0, 0, 63);
-    color: aqua;
-    box-shadow: 0px 0px 5px 3px;
-}
-.Tmain{
-    background-color: #333;
-    
-}
-
-.teacherinfo {
-    padding-left: 10px;
-    font-family: 'Concert One', sans-serif;
-    font-size: 22px;
-    
-    color: whitesmoke;
-    max-height: 600px; /* Set a maximum height for scroll */
-    overflow-y: auto; /* Enable vertical scroll when content overflows */
-}
-.sir1{
-    color: rgb(0, 234, 255);
-}
-.aboutteacher{
-    color: whitesmoke;
-}
-
-.contactusbox{
+.middle {
     display: flex;
-    flex-direction: column;
-}
-.contactlink{
-    display: flex;
-    border: 2px solid white;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #f9f9f9;
-    border-radius: 5px;
     align-items: center;
     justify-content: center;
 }
-.y{
-    background-color: red;
+
+.joinus, .toppers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
-.i{
-    background-color: rgb(209, 0, 181);
+
+.addmition {
+    width: 100%;
 }
-.sirn{
-    color: yellow;
+
+.addmit, .toppers-title {
+    color: #0c003d;
+    font-size: 40px;
+    font-family: 'Salsa', cursive;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.locationsfather{
-    background-color: rgb(6, 20, 73);
+
+.addmittittle {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-@media screen and (min-width: 200px){
-    body{
-        background-color: rgb(0, 22, 100);
+
+.admbox {
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #0c003d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #33009e;
+}
+
+.toppers-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.topper-item {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.teachcont {
+    display: flex;
+    flex-direction: column;
+}
+
+.teach {
+    display: flex;
+    padding: 20px;
+    width: 95%;
+    height: 100%;
+    margin: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.teachabout {
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .navbar {
+        width: 93%;
+    }
+
+    .joinus{
+        width: 75vh;
+    }
+
+    .scroll-container{
+        width: 79vh;
+        margin-left: 84%;
+    }
+
+    .content{
+        margin-left: 73%;
+    }
+
+    .toppers{
+        width: 75vh;
     }
 }
 
-@media screen and (min-width: 455px) {
-    .subcontent {
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 45px;
-    }
-    .subtitles{
-        font-size: 45px;
-    }
-    .teacherinfo{
-        font-size: 50px;
-        max-height: 75vh;
-    }
-    .teacher{
-        font-size: 40px;
-    }
-    .info a{
-        font-size: 25px;
-    }
-}

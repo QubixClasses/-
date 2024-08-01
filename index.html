@@ -1,315 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Qubix Classes</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="website icon" type="png" href="Qubix box logo.jpg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link class="upper-logo" rel="website icon" type="png" href="logo.png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-        /* Your existing styles */
-        @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-
-        body {
-            background-color: rgb(2, 2, 99);
-            margin: 0;
-            padding: 0;
-        }
-
-        .head {
-            font-size: 8px;
-            color: rgb(3, 2, 1);
-            text-align: center;
-        }
-
-        main {
-            border: 3px solid rgb(43, 0, 255);
-            margin: 22px;
-            height: 88vh;
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            flex-direction: column;
-            overflow: auto;
-            align-items: center;
-        }
-
-        .top {
-            color: rgb(5, 104, 170);
-            font-style: oblique;
-        }
-
-        .topimg {
-            width: 100%;
-            max-width: 1500px;
-            /* mix-blend-mode: color-burn; */
-        }
-
-        .Content {
-            width: 94%;
-            max-width: 700px;
-            margin-right: auto;
-            margin-left: 0px;
-        }
-
-        .location {
-            border: 3px solid rgb(86, 14, 255);
-            text-align: center;
-            margin: 45px;
-            font-size: large;
-            font-family: 'Lemon', serif;
-            color: rgb(255, 0, 0);
-            background-color: aqua;
-            left: 30px;
-            right: 30px;
-            height: 700px;
-        }
-
-        .location div:hover {
-            background-color: rgb(16, 0, 87);
-        }
-
-        .info {
-            /* Add the multi-level navbar styles here */
-            overflow: hidden;
-            background-color: #333;
-            font-size: 10px;
-        }
-
-        .info a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            
-        }
-
-        .clickme {
-            background-color: rgb(179, 255, 0);
-            border: 3px solid red;
-            margin: 20px;
-        }
-
-
-        .topstudent {
-            border: 3px solid darkblue;
-            margin: 34px;
-            background-color: #15009d;
-
-        }
-
-        .studenttop {
-            padding: 25px;
-            text-align: center;
-            color: rgb(0, 251, 255);
-            font-family: 'Salsa', cursive;
-            /* font-family: inherit; */
-            font-size: 50px;
-        }
-
-        .scontent {
-            margin-left: 15px;
-            color: aliceblue;
-            font-size: 40px;
-            text-align: center;
-        }
-
-        .addmition {
-            background-color: #15009d;
-            margin: 10px 35px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .addmittittle {
-            color: aliceblue;
-        }
-
-        .addmit {
-            color: aqua;
-            font-size: 50px;
-            font-family: 'Salsa', cursive;
-            margin-bottom: 20px;
-        }
-        .Class_img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .Class_img img{
-            /* width: 30px; */
-            width: 84%;
-            max-width: 1500px;
-            border: 2px solid white;
-            border-radius: 8px;
-            margin: 10px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        label {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        input[type="submit"] {
-            background-color: #17962a;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-            padding: 15px;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #127421;
-        }
-
-        /* ######################################################################################################################## */
-        @media screen and (min-width: 700px) {
+        @media screen and (max-width: 767px) {
             body {
-                background-color: rgb(255, 255, 255);
+                width: 10%;
             }
 
-            main {
-                background-color: rgb(255, 255, 255);
-                background-repeat: no-repeat;
-                border: none;
+            .top h1 {
+                font-size: 20px;
+            }
+
+            .top h1 img {
+                width: 120px;
+            }
+
+            .content img {
+                width: 62vh;
+                margin-right: 207px;
+            }
+
+            .scroll-container {
+                width: 43vh;
+                margin-left: 0%;
+            }
+
+            .joinus {
+                width: 36vh;
+            }
+
+            .toppers {
+                width: 35vh;
+            }
+
+            .navbar {
+                width: 74%;
+            }
+
+            .content img {
+                position: relative;
+                width: 61vh;
+                /* margin-right: 207px; */
+                left: 306px;
 
             }
 
-            .both {
+            .scroll-container {
+                width: 43vh;
+                margin-left: 42vh;
+            }
+
+            .content img {
+                position: relative;
+                width: 56vh;
+                left: 330px;
+            }
+
+            .middle {
                 display: flex;
-                
-            }
-
-            .addmition {
-                background-color: #15009d;
-                margin: 5px 35px;
-                text-align: center;
-                padding: 20px;
-                border-radius: 8px;
-            }
-
-
-            .topstudent {
-                border: 3px solid darkblue;
-                /* margin: 34px; */
-                width: 459px;
-                height: 661px;
-                background-color: #15009d;
-                margin: 0;
-                padding: 10px;
-                border-radius: 8px;
-            }
-
-            .scontent {
-                margin-left: 15px;
-                color: aliceblue;
-                font-size: 41px;
-                text-align: center;
-                border-radius: 8px;
-            }
-
-            .studenttop {
-                padding: 25px;
-                text-align: center;
-                color: rgb(0, 251, 255);
-                font-family: 'Salsa', cursive;
-                /* font-family: inherit; */
-                font-size: 60px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
             }
         }
-
-        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     </style>
 </head>
-<!-- 192.168.29.105 -->
 
 <body>
-
-
-    <!-- Multi-level navigation bar -->
-    <div class="info">
-        <a href="index.html">Home</a>
-        <a href="index-2.html">Location</a>
-        <a href="about.html">About Us</a>
-        <a href="Teachers.html">Teachers</a>
-    </div>
-    <main>
-        <!-- ... (rest of your content) ... -->
-
-        <div class="head">
-            <h1 class="top">Preparing you for tomorrow</h1>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">preparing you for tomorrow</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
         </div>
-
-        <img class="topimg" src="Qubix logo.jpg" alt="">
-
-        <img class="Content" src="Content.jpg" alt="Right arrow"> 
-        <div class="Class_img"> <img src="Qubix inside of class.jpg" alt="Qubix inside of class" > </div>
-        
-            
-        <div class="both">
-            <div class="topstudent">
-                <div class="studenttop">
-                    TOP STUDENTS
-                </div>
-
-                <div class="scontent">
-                    1.temporary <br>
-                    <br>
-                    2.temporary <br>
-                    <br>
-                    3.temporary <br>
-                    <br>
-                    4.temporary <br>
-                    <br>
-                    5.temporary <br>
-                    <br>
+    </header>
+    <main>
+        <div class="top">
+            <h5></h5>
+            <h1><img src="download.png" width="270" alt="">Qubix Classes</h1>
+        </div>
+        <div class="middle">
+            <div class="content"><img src="content.png" alt=""></div>
+            <div class="scroll-container">
+                <div class="scroll-item"><img src="Qubix inside of class.jpg" width="660" alt="Image 1"></div>
+                <div class="scroll-item"><img src="Qubix Empty class.jpg" width="660" alt="Image 2"></div>
+                <div class="scroll-item"><img src="image3.jpg" width="660" alt="Image 3"></div>
+                <div class="scroll-item"><img src="image4.jpg" width="660" alt="Image 4"></div>
+            </div>
+            <button class="scroll-button right" onclick="scrollRight()">›</button>
+        </div>
+        <div class="bottom" style="display: flex;">
+            <div class="joinus">
+                <div class="addmition">
+                    <div class="addmit">Join Us</div>
+                    <form action="mailto:guptashivraj933@gmail.com" method="post" enctype="text/plain">
+                        <div class="admbox">
+                            <label class="addmittittle" for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="admbox">
+                            <label class="addmittittle" for="class">Class:</label>
+                            <input type="text" id="class" name="class" required>
+                        </div>
+                        <div class="admbox">
+                            <label class="addmittittle" for="board">Board:</label>
+                            <input type="text" id="board" name="board" required>
+                        </div>
+                        <div class="admbox">
+                            <label class="addmittittle" for="school">School:</label>
+                            <input type="text" id="school" name="school" required>
+                        </div>
+                        <div class="admbox">
+                            <label class="addmittittle" for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="admbox">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!-- Join Us Form -->
-            <div class="addmition">
-                <div class="addmit">Join Us</div>
-                <form action="mailto:guptashivraj933@gmail.com" method="post" enctype="text/plain">
-                    <label class="addmittittle" for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label class="addmittittle" for="class">Class:</label>
-                    <input type="text" id="class" name="class" required>
-
-                    <label class="addmittittle" for="board">Board:</label>
-                    <input type="text" id="board" name="board" required>
-
-                    <label class="addmittittle" for="school">School:</label>
-                    <input type="text" id="school" name="school" required>
-
-                    <label class="addmittittle" for="school">Phone Number:</label>
-                    <input type="text" id="school" name="school" required>
-
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="toppers">
+                <div class="toppers-title">Toppers of Coaching</div>
+                <ul class="toppers-list">
+                    <li class="topper-item">1. Student Name One</li>
+                    <li class="topper-item">2. Student Name Two</li>
+                    <li class="topper-item">3. Student Name Three</li>
+                    <li class="topper-item">4. Student Name Four</li>
+                    <li class="topper-item">5. Student Name Five</li>
+                    <h3>If you want your name here, Prepare best for next test</h3>
+                </ul>
             </div>
+
+
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

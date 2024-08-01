@@ -4,171 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type="png" href="Qubix box logo.jpg">
-</head>
-<style>
-    .aboutmain {
-        background-image: url("https://t4.ftcdn.net/jpg/05/21/95/85/360_F_521958580_kNDeJSIB0VUVqJ0n9fUwwubwHTRkn2VS.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    <title>Document</title>
+    <link class="upper-logo" rel="website icon" type="png" href="logo.png">
+    <style>
+        .middle1{
+            padding: 10px 25px;
+        }
 
-    .aboutfull {
-        margin: 20px;
-        /* display: flex; */
-    }
+        .top h1{
+            font-size: 60px;
+        }
 
-    .abouttop {
-        font-size: 3.5vw;
-        /* Responsive font size using vw units */
-        text-align: center;
-        padding-bottom: 10px;
-        font-family: 'Salsa', cursive;
-        color: rgb(59, 125, 255);
-    }
-
-    .subtitles {
-        font-size: 3vw;
-        /* Responsive font size using vw units */
-        font-family: 'Salsa', cursive;
-        font-weight: 600;
-        font-size: 20px;
-        color: yellow;
-    }
-
-    .subcontent {
-        /* display: flex; */
-        font-size: 2.5vw;
-        /* Responsive font size using vw units */
-        color: aliceblue;
-        /* justify-content: center;
-        align-items: center; */
-    }
-
-    .feesimg {
-        max-width: 1000px;
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .webcreator {
-        background-color: rgb(66, 71, 71);
-        color: aqua;
-        border: 2px solid black;
-        text-align: center;
-        padding: 20px;
-        margin-top: 25px;
-        font-family: 'Salsa', cursive;
-        font-size: larger;
-    }
-
-    @media screen and (min-width: 455px) {
-        .subcontent {
-            font-size: large;
+        .midpart .cont{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 33px;
+            justify-content: space-between;
         }
-        .subtitles{
-            font-size: 45px;
+        .midpart .cont img{
+            width: 500px;
         }
-    }
-
-    .webhead {
-        color: rgb(242, 255, 0);
-    }
-
-    .myinsta {
-        color: rgb(238, 255, 0);
-        text-decoration: none;
-        border: 2px solid rgb(30, 0, 89);
-        background-color: blue;
-    }
-
-    .aboutimg {
-        width: 100%;
-        max-width: 500px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    }
-
-    @media screen and (max-width:1000px) {
-        .subcontent {
-            /* display: flex; */
-            font-size: 2.5vw;
-            /* Responsive font size using vw units */
-            color: aliceblue;
-            
+        .midpart h2{
+            font-size: 40px;
         }
-    }
-</style>
+        .midpart p{
+            font-size: 20px;
+            width: 55%;
+        }
+        @media screen and (max-width: 767px) {
+            .top h1{
+                font-size: 20px;
+            }
+            .top h1 img{
+                width:120px ; 
+            }
+
+            .middle1{
+                flex-direction: column;
+            }
+            .middle1 .midpart .cont{
+                flex-direction: column;
+            }
+
+            .middle1 .midpart img{
+                width: 100%;
+            }
+
+            .midpart p{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <div class="info">
-        <a href="index.html">Home</a>
-        <a href="index-2.html">Location</a>
-        <a href="about.html">About Us</a>
-        <a href="Teachers.html">Teachers</a>
-    </div>
-    <main class="aboutmain">
-        <div class="aboutfull">
-            <div class="abouttop">
-                Welcome to Qubix Classes – Where Excellence Meets Education!
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">preparing you for tomorrow</a>
             </div>
-            <div class="subtitles">Introduction:</div>
-            <div class="subcontent">
-                At Qubix Classes, we believe in the transformative power of education. Established with a passion for
-                nurturing young minds and fostering academic brilliance, our coaching institute is dedicated to shaping
-                the future leaders of tomorrow. <br>
-                <img class="aboutimg" src="Qubixabout-1.jpg" alt="">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="subtitles">Our Commitment:</div>
-            <div class="subcontent">With a steadfast commitment to providing top-notch education, Qubix Classes stands
-                as a beacon of academic excellence in the heart of [your location]. We believe that education is not
-                just about acquiring knowledge; it's about empowering individuals to reach their highest potential. <br>
-                <img class="aboutimg" src="Qubixabout-2.jpg" alt="">
-            </div>
-            <div class="subtitles">Contect us:
-            </div>
-            <div class="subcontent contactusbox">
-                <a class="contactlink y" href="https://www.youtube.com/@qubixclasses1912">Our Youtube</a>  <br>
-                <a  class="contactlink i" href="https://www.instagram.com/qubix_classes_08/">Our Instagram</a>
-            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <h5></h5>
+            <h1><img src="download.png" width="270" alt="">Welcome to Qubix Classes – Where Excellence Meets Education!</h1>
+        </div>
+        <div class="middle1">
+            <div class="midpart 1">
+                <h2>Introduction:</h2>
+                <div class="cont">
 
+                    <p>At Qubix Classes, we believe in the transformative power of education. Established with a deep-rooted passion for nurturing young minds and fostering academic brilliance, our coaching institute is dedicated to shaping the future leaders of tomorrow. We understand that education is not merely about imparting knowledge but about inspiring and empowering students to reach their fullest potential. Our tailored programs are designed to cater to the diverse needs of each student, providing them with the skills, confidence, and critical thinking abilities necessary to excel in their academic pursuits and beyond.
 
-            <div class="subtitles">What Sets Us Apart:</div>
-            <div class="subcontent">At Qubix, we stand out from the rest. Our institute goes beyond traditional teaching
-                methods, embracing innovative approaches to make learning a dynamic and engaging experience. We take
-                pride in our team of experienced educators who are not just teachers but mentors, guiding students on
-                their journey to success. <br>
-                <img class="aboutimg" src="Qubixabout-4.jpg" alt="">
+                        Our approach to education goes beyond traditional teaching methods. We focus on creating a dynamic and interactive learning environment that encourages curiosity and a love for learning. By integrating innovative teaching techniques, personalized attention, and a supportive atmosphere, we aim to make learning an enjoyable and enriching experience. Our experienced educators are not only experts in their respective fields but also dedicated mentors who are committed to guiding students through their educational journey with patience and care.
+                        
+                        At Qubix Classes, we recognize that every student has unique strengths and challenges. That’s why we offer a range of programs and resources designed to address individual needs, from foundational courses to advanced studies. We provide regular assessments and feedback to ensure that students are making progress and to identify areas where additional support may be needed. Our goal is to equip students with the knowledge, skills, and mindset to overcome obstacles and achieve their goals, both academically and personally.</p>
+                    <img src="Qubixabout-1.jpg" alt="">
+                </div>
             </div>
-            <div class="subtitles">Courses Tailored for Success:</div>
-            <div class="subcontent">Explore our diverse range of courses designed to cater to various academic needs.
-                Whether preparing for competitive exams or seeking assistance in specific subjects, Qubix Classes has
-                the right program for you. <br>
-                <img class="aboutimg" src="Qubixabout-5.jpg" alt="">
+            <div class="midpart 1">
+                <h2>Our Commitment:</h2>
+                <div class="cont">
+
+                    <p>At Qubix, we stand out from the rest. Our institute goes beyond traditional teaching methods, embracing innovative approaches to make learning a dynamic and engaging experience. We take pride in our team of experienced educators who are not just teachers but mentors, guiding students on their journey to success. Our commitment to educational excellence is reflected in our use of cutting-edge technology and interactive learning tools, which enhance the learning process and make complex concepts more accessible. We offer personalized learning plans tailored to each student's unique needs, ensuring that every individual receives the support and encouragement they require to thrive.
+
+                        Our educators are dedicated to fostering a positive and inclusive learning environment where students feel motivated and empowered to reach their full potential. They are actively involved in the development of our curriculum, ensuring it is both relevant and challenging, and they continually adapt their teaching strategies to meet the evolving needs of our students. Beyond academics, we emphasize the importance of critical thinking, creativity, and problem-solving skills, preparing students for real-world challenges and future opportunities.
+                        
+                        At Qubix, we believe in the holistic development of our students, focusing on both their intellectual and personal growth. We provide a range of extracurricular activities and enrichment programs designed to cultivate their interests and talents, helping them build confidence and leadership skills. Our goal is to create a nurturing and stimulating environment where students can explore their passions, develop their abilities, and achieve their aspirations.
+                        
+                        By combining innovative teaching methods with a strong commitment to student success, Qubix sets a new standard in education. We are dedicated to creating an environment where every student can excel, and we strive to inspire a lifelong love of learning that extends beyond the classroom.</p>
+                    <img src="Qubixabout-2.jpg" alt="">
+                </div>
             </div>
-            <div class="subtitles">Packages</div>
+            
+            
+            <div class="midpart 1">
+                <h2>Courses Tailored for Success:</h2>
+                <div class="cont">
 
-            <div class="subcontent"><img class="feesimg" src="Qubix fees.jpg" alt="fees"></div>
-            <div class="subtitles">Join Us on the Journey:</div>
-            <div class="subcontent">We invite you to join us on this exciting journey of learning and growth. At Qubix
-                Classes, we are not just an institute; we are a community dedicated to preparing students for a future
-                of limitless possibilities.</div>
-            <div class="webcreator">
-                <div class="webhead">WEBPAGE CREATOR</div>
-                Name = Raunak Gupta <br>
-                occ = Programmer <br>
-                Instagram = <a class="myinsta" href="https://www.instagram.com/raunak_gupta_22/">ClICK ME</a>
+                    <p>Explore our diverse range of courses designed to cater to various academic needs and aspirations. Whether you're preparing for competitive exams, seeking assistance in specific subjects, or aiming to enhance your overall academic performance, Qubix Classes has the right program tailored just for you. Our offerings include comprehensive test preparation courses, specialized tutoring in subjects such as mathematics, science, and languages, as well as enrichment programs designed to deepen understanding and foster a love for learning.
 
+                        We understand that every student has unique learning needs and goals, which is why our courses are meticulously designed to address different educational requirements. From foundational courses that build essential skills to advanced programs that challenge and expand your knowledge, we provide a variety of options to suit your academic journey. Our expert instructors bring years of experience and a wealth of knowledge to each course, ensuring that you receive the highest quality education and personalized attention.
+                        
+                        In addition to our core academic programs, we offer specialized workshops and seminars that focus on skill development, study techniques, and exam strategies. These are aimed at equipping students with practical tools and insights to excel in their studies and achieve their academic objectives. Our commitment to your success is reflected in our continuous efforts to update and enhance our curriculum based on the latest educational trends and feedback from students.
+                        
+                        At Qubix Classes, we are dedicated to supporting you every step of the way. Whether you’re aiming for top scores in competitive exams or seeking to improve in specific subject areas, our tailored programs and dedicated educators are here to help you succeed. Explore our course offerings today and discover how we can help you achieve your academic goals and unlock your full potential.</p>
+                    <img src="Qubixabout-3.jpg" alt="">
+                </div>
             </div>
         </div>
+        
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

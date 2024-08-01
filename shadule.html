@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link class="upper-logo" rel="website icon" type="png" href="logo.png">
+    <style>
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px
+        }
+
+        .mid {
+            display: flex;
+        }
+
+        .mid .box {
+            width: 200px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.444);
+            color: black;
+            border: 2px solid black;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .f {
+            width: 550px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .mid{
+                flex-direction: column;
+            }
+
+            .top h1{
+                font-size: 20px;
+            }
+            .top h1 img{
+                width:120px ; 
+            }
+
+            .mid .box{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#">preparing you for tomorrow</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a
+                        href="https://www.google.com/maps/place/Qubix+classes/@23.3026484,81.3545514,184m/data=!3m1!1e3!4m6!3m5!1s0x3986fbb2d46553b7:0xe8e488ecff2befa6!8m2!3d23.3027399!4d81.3543711!16s%2Fg%2F11rn04n2l6?entry=ttu">Location</a>
+                </li>
+                <li><a href="shadule.html">Class Schedule</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <h5></h5>
+            <h1><img src="download.png" width="250" alt="">Classes Schedule </h1>
+        </div>
+        <div class="mid">
+            <div class="box a">
+                <h2>Class - 8th & 6th</h2>
+                <p>5:30pm - 7:00pm</p>
+
+            </div>
+            <div class="box b">
+                <h2>Class - 10th</h2>
+                <p>5:30pm - 7:00pm</p>
+
+            </div>
+            <div class="box c">
+                <h2>Sainik/Navodaya</h2>
+                <p>7:00pm - 8:30pm</p>
+
+            </div>
+            <div class="box d">
+                <h2>Class - 7th & 5th</h2>
+                <p>4:00pm - 5:30pm</p>
+
+            </div>
+            <div class="box e">
+                <h2>Class - 9th</h2>
+                <p>4:00pm - 5:30pm </p>
+
+            </div>
+            <div class="box f">
+                <h2>Morning batch(10th&8th)</h2>
+                <p>7:30am - 9:00 </p>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
